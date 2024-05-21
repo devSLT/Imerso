@@ -80,7 +80,6 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
 .carroselVr img{
@@ -92,6 +91,18 @@ main {
     display: flex;
 }
 
-.containerImersoes img{
-    width: 25%;
+.containerImersoesTexto img{
+    width: 100%;
+}
+
+.containerImersoesTexto h3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.containerImersoesTexto p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

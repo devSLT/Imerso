@@ -11,14 +11,31 @@ body{
 }
 
 
-.header {
-    width: 100vw;
-    border-bottom: 1px solid;
+
+.dropdown a{
+    color: black;
 }
+
+.navbarHeader{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center ;
+}
+
+header{
+    background-color: rebeccapurple;
+    width: 100vw;
+    min-height: 8vh;
+}
+
+/* Config MAIN */
 
 main {
     width: 100vw;
     min-height: 100vh;
+    margin-top: 5vh;
 }
 
 
@@ -48,6 +65,15 @@ main {
     text-align: justify;
     font-size: 5rem;
     font-weight: 400;
+}
+
+.boxVr1 div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
 }
 
 .boxVr1 div h2 {
@@ -82,10 +108,22 @@ main {
     align-items: center;
 }
 
+.carroselVrC{
+    display: none;
+    width: 100vw;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
 .carroselVr img{
     width: 100%;
 }
-
+.carroselVrC img{
+    width: 100%;
+}
 .containerImersoes{
     width: 100%;
     display: flex;
@@ -107,6 +145,7 @@ main {
     align-items: center;
 }
 
+/*Footer*/
 .containerFooter{
     width: 100%;
     display: flex;
@@ -132,8 +171,55 @@ main {
 
 .containerFooterUltimo{
     display: flex;
-    margin-bottom: 3%;
     justify-content: center;
     align-items: center;
     background-color: #DFDFDF;
+}
+
+/* MEDIA querie */
+
+@media screen and (max-width: 1280px) {
+    .boxVr1 div{
+        background-color: red;
+    }
+
+    .boxVr1 div h1{
+        font-size: 4rem;
+    }
+
+    .boxVr1 div h2{
+        font-size: 1rem
+    }
+
+    .boxVr1 div iframe{
+        width: 80%;
+        height: 30%
+    }
+
+    .carroselVr{
+        width:99.8vw;
+    }
+
+    .containerImersoesTexto p{
+        font-size: 1rem;
+    }
+
+    .containerImersoesTexto{
+        width: 33%;
+    }
+}
+
+@media screen and (max-width: 760px){
+    .boxVr{
+        flex-direction: column;
+        background-color: rebeccapurple;
+    }
+
+    .carroselVrC{
+        display: block;
+    }
+
+    .carroselVr{
+        display: none;
+    }
 }

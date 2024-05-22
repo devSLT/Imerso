@@ -106,3 +106,34 @@ main {
     justify-content: center;
     align-items: center;
 }
+
+.containerFooter{
+    width: 100%;
+    display: flex;
+    margin-top: 5%;
+    background-color: #DFDFDF;
+    justify-content: center;
+    align-items: center;
+}
+
+.containerFooter img{
+    width: 10%;
+}
+
+.containerFooter a{
+    margin: 2%;
+    padding: 2%;
+    margin-bottom: 5%;
+    font-size: 14px;
+    display: flex;
+    text-decoration: none;
+    color: black;
+}
+
+.containerFooterUltimo{
+    display: flex;
+    margin-bottom: 3%;
+    justify-content: center;
+    align-items: center;
+    background-color: #DFDFDF;
+}

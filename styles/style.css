@@ -29,12 +29,6 @@ header {
     scale: 1.015;
 }
 
-.bdr {
-    width: 35%;
-    height: 2px;
-    background-color: rgb(141, 141, 141);
-}
-
 /* Config MAIN */
 
 main {
@@ -208,6 +202,13 @@ main {
 }
 
 @media screen and (max-width: 760px) {
+    /* borda header */
+    .bdr {
+        width: 35%;
+        height: 2px;
+        background-color: rgb(141, 141, 141);
+    }
+
     .boxVr {
         flex-direction: column;
         height: 50vh;

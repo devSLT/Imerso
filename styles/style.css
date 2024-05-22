@@ -6,26 +6,25 @@
     font-family: "Open Sans", sans-serif;
 }
 
-body{
+body {
     overflow-x: hidden;
 }
 
 
 
-.dropdown a{
+.dropdown a {
     color: black;
 }
 
-.navbarHeader{
+.navbarHeader {
     width: 100%;
     height: 100%;
     display: flex;
     justify-content: space-around;
-    align-items: center ;
+    align-items: center;
 }
 
-header{
-    background-color: rebeccapurple;
+header {
     width: 100vw;
     min-height: 8vh;
 }
@@ -80,7 +79,7 @@ main {
     font-size: 1.1rem;
 }
 
-.boxVr1 iframe{
+.boxVr1 iframe {
     margin-top: 5vh;
 }
 
@@ -100,57 +99,33 @@ main {
     width: 32%;
 }
 
-.carroselVr{
-    width: 100vw;
-    height: 50vh;
+.containerImersoes {
+    width: 100%;
+    display: flex;
+}
+
+.containerImersoesTexto img {
+    width: 100%;
+}
+
+.containerImersoesTexto h3 {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.carroselVrC{
-    display: none;
-    width: 100vw;
-    height: 50vh;
+.containerImersoesTexto p {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-
-.carroselVr img{
-    width: 100%;
-}
-.carroselVrC img{
-    width: 100%;
-}
-.containerImersoes{
-    width: 100%;
-    display: flex;
-}
-
-.containerImersoesTexto img{
-    width: 100%;
-}
-
-.containerImersoesTexto h3{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.containerImersoesTexto p{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.mediaVr{
+.mediaVr {
     display: none;
 }
 
 /*Footer*/
-.containerFooter{
+.containerFooter {
     width: 100%;
     display: flex;
     margin-top: 5%;
@@ -159,11 +134,11 @@ main {
     align-items: center;
 }
 
-.containerFooter img{
+.containerFooter img {
     width: 10%;
 }
 
-.containerFooter a{
+.containerFooter a {
     margin: 2%;
     padding: 2%;
     margin-bottom: 5%;
@@ -173,69 +148,82 @@ main {
     color: black;
 }
 
-.containerFooterUltimo{
+.containerFooterUltimo {
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #DFDFDF;
 }
 
+/* CONFIG CARROSEL SWIPER */
+
+.swiper{
+    width: 100%;
+}
+
+.swiper-slide{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 /* MEDIA querie */
 
 @media screen and (max-width: 1280px) {
 
-    .boxVr1 div h1{
+    .boxVr1 div h1 {
         font-size: 4rem;
     }
 
-    .boxVr1 div h2{
+    .boxVr1 div h2 {
         font-size: 1rem
     }
 
-    .boxVr1 div iframe{
+    .boxVr1 div iframe {
         width: 80%;
         height: 30%
     }
 
-    .carroselVr{
-        width:99.8vw;
+    .carroselVr {
+        width: 99.8vw;
     }
 
-    .containerImersoesTexto p{
+    .containerImersoesTexto p {
         font-size: 1rem;
     }
 
-    .containerImersoesTexto{
+    .containerImersoesTexto {
         width: 33%;
     }
 }
 
-@media screen and (max-width: 760px){
-    .boxVr{
+@media screen and (max-width: 760px) {
+    .boxVr {
         flex-direction: column;
-        min-height:70vh ;
+        min-height: 70vh;
     }
 
-    .boxVr1{
+    .boxVr1 {
         width: 100%;
         height: 25vh;
     }
 
-    .boxVr1 div{
+    .boxVr1 div {
         width: 100%;
         height: 100%;
     }
 
-    .boxVr1 div h1{
+    .boxVr1 div h1 {
         font-weight: 600;
         font-size: 2.5rem;
     }
 
-    .boxVr1 div h2{
+    .boxVr1 div h2 {
         font-size: 1rem;
     }
 
-    .boxVr2{
+    .boxVr2 {
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -245,35 +233,49 @@ main {
         margin-bottom: 15%;
     }
 
-    .boxVr2 img{
+    .boxVr2 img {
         margin: 0;
     }
 
-    .boxVr2 .imgVR{
+    .boxVr2 .imgVR {
         display: flex;
         justify-content: space-around;
         align-items: center;
         width: 100%;
-        height: 50%;    
+        height: 50%;
     }
 
-    .boxVr2 .imgVR img{
+    .boxVr2 .imgVR img {
         width: 45%;
     }
-    .mediaVr{
+
+    .mediaVr {
         display: flex;
         margin: auto;
         width: 100%;
         height: 50%;
     }
 
-    .mediaVr iframe{
+    .mediaVr iframe {
         width: 90%;
         height: 100%;
         margin: auto;
     }
-    
-    .containerHeaderAmbientes{
+
+    .boxVr2 .umImg {
+        margin: 0;
+    }
+
+    .swiper {
+        width: 100%;
+        height: 200px;
+      }
+
+    .videoVr {
+        display: none;
+    }
+
+    .containerHeaderAmbientes {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -281,50 +283,31 @@ main {
         width: 100%;
     }
 
-    .containerHeaderAmbientes p{
+    .containerHeaderAmbientes p {
         width: 90%;
         text-align: center;
     }
 
-    .containerImersoes{
+    .containerImersoes {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
 
-    .containerImersoesTexto{
+    .containerImersoesTexto {
         width: 100%;
     }
 
-    .boxVr2 .umImg{
-        margin: 0;
-    }
-
-    .carroselVrC{
-        display: block;
+    .containerFooter {
         width: 100%;
-        height: 200px;
-    }
-
-    .carroselVrC img{
-        width:100%;
-        height: 100%;
-    }
-
-    .videoVr{
-        display: none;
-    }
-
-    .containerFooter{
-        width: 100%;
-        height:20vh;
+        height: 20vh;
         display: flex;
         justify-content: center;
         align-items: center;
     }
 
-    .boxImgFooter{
+    .boxImgFooter {
         width: 45%;
         height: 100%;
         display: flex;
@@ -332,20 +315,20 @@ main {
         align-items: center;
     }
 
-    .boxImgFooter img{
+    .boxImgFooter img {
         width: 60%;
     }
 
-    .boxItemsFooter{
+    .boxItemsFooter {
         width: 55%;
     }
 
-    .boxItemsFooter a{
+    .boxItemsFooter a {
         font-size: 0.7rem;
         font-weight: 600;
     }
 
-    .containerFooterUltimo{
+    .containerFooterUltimo {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -353,7 +336,7 @@ main {
         height: 8vh;
     }
 
-    .containerFooterUltimo p{
+    .containerFooterUltimo p {
         font-size: 0.8rem;
         font-weight: 300;
     }

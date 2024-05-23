@@ -1,3 +1,4 @@
+<A></A>
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -28,32 +29,33 @@
 <body>
   <header>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
-      <div class="container-fluid">
-        <img class="Logo-Menu" src="./Imagens/Logo imersiva 1.png" alt="Logo industria">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="container-fluid hnav">
+        <a href="./index.html"><img class="Logo-Menu" src="./Imagens/Logo imersiva 1.png" alt="Logo industria"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link" href="#">ÓCULOS VR</a>
-              <div class="bdr"></div>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">INDUSTRIA 4.0</a>
-              <div class="bdr"></div>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">ATENDIMENTO</a>
-              <div class="bdr"></div>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">OBJETIVOS</a>
-              <div class="bdr"></div>
-            </li>
-            
-          </div>
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="../index.html">HOME</a>
+                <div class="bdr"></div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/oculos.html">ÓCULOS VR</a>
+                <div class="bdr"></div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/industria.html">INDUSTRIA 4.0</a>
+                <div class="bdr"></div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/about.html">OBJETIVOS</a>
+                <div class="bdr"></div>
+              </li>
         </div>
+      </div>
     </nav>
   </header>
   <main>
@@ -63,9 +65,18 @@
       <!-- Additional required wrapper -->
       <div class="swiper-wrapper">
         <!-- Slides -->
-        <div class="swiper-slide"><img src="Imagens/Slide_1.png" alt=""></div>
-        <div class="swiper-slide"><img src="Imagens/Slide_2.png" alt=""></div>
-        <div class="swiper-slide"><img src="Imagens/Slide_3.png" alt=""></div>
+
+        <div class="swiper-slide slidePC"><img src="./Imagens/SlidesPC/Slide_1PC.png" alt="Slide_1"></div>
+        <div class="swiper-slide slidePC"><img src="./Imagens/SlidesPC/Slide_2PC.png" alt="Slide_2"></div>
+        <div class="swiper-slide slidePC"><img src="./Imagens/SlidesPC/Slide_3PC.png" alt="Slide_3"></div>
+        <div class="swiper-slide slidePC"><img src="./Imagens/SlidesPC/Slide_4PC.png" alt="Slide_4"></div>
+        <div class="swiper-slide slidePC"><img src="./Imagens/SlidesPC/Slide_5PC.png" alt="Slide_5"></div>
+
+        <div class="swiper-slide slideM"><img src="./Imagens/SlidesMobile/Slide_1.png" alt="Slide_1"></div>
+        <div class="swiper-slide slideM"><img src="./Imagens/SlidesMobile/Slide_2.png" alt="Slide_2"></div>
+        <div class="swiper-slide slideM"><img src="./Imagens/SlidesMobile/Slide_3.png" alt="Slide_3"></div>
+        <div class="swiper-slide slideM"><img src="./Imagens/SlidesMobile/Slide_4.png" alt="Slide_4"></div>
+        <div class="swiper-slide slideM"><img src="./Imagens/SlidesMobile/Slide_5.png" alt="Slide_5"></div>
       </div>
       <!-- If we need pagination -->
       <div class="swiper-pagination"></div>
@@ -82,15 +93,14 @@
     <section class="boxVr">
       <div class="boxVr1">
         <div>
-          <h1> Óculos VR
-            Box 2.0</h1>
+          <h1> Óculos VR Box 2.0</h1>
           <h2> Compátivel com celulares Android e iOS</h2>
         </div>
       </div>
       <div class="boxVr2">
         <div class="imgVR">
           <img class="VRimagens" src="./Imagens/VR2.png" alt="Imagem VR 2">
-          <img class="VRimagens umImg" src="./Imagens/VR1.png" alt="Imagem VR 2">
+          <img class="VRimagens" src="./Imagens/VR1.png" alt="Imagem VR 2">
         </div>
       </div>
     </section>
@@ -131,10 +141,12 @@
         <img src="./Imagens/Logo imersiva 2.png" alt="Logo do footer">
       </div>
       <div class="boxItemsFooter">
-        <a href="#"> QUEM SOMOS </a>
-        <a href="#"> INDÚSTRIA 4.0 </a>
-        <a href="#"> NOSSO OBJETIVO </a>
-        <a href="#"> ÓCULOS DE REALIDADE VIRTUAL (VR's) </a>
+        <ul>
+          <li><a href="pages/quemsomos.html"> QUEM SOMOS </a></li>
+          <li><a href="pages/industria.html"> INDUSTRIA 4.0 </a></li>
+          <li><a href="pages/oculos.html"> ÓCULOS VR </a></li>
+          <li><a href="./pages/about.html"> OBJETIVOS </a></li>
+        </ul>
       </div>
     </div>
 
@@ -142,7 +154,6 @@
       <p>Desenvolvido por IMERSIVA 2024 | Sem fins lucrativos</p>
     </div>
   </footer>
-
   <!-- SWIPER CARROSEL -->
   <script src="scripts/swiper.js"></script>
   <!-- ANIMAÇÂO -->
@@ -152,10 +163,7 @@
     AOS.init({
       duration: 1500
     });
-
-    
   </script>
-
 </body>
 
 </html>

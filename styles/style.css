@@ -29,6 +29,12 @@ header {
     scale: 1.015;
 }
 
+.navbar-nav{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
 /* Config MAIN */
 
 main {
@@ -60,12 +66,6 @@ main {
     height: 100%;
 }
 
-.boxVr1 div h1 {
-    text-align: justify;
-    font-size: 5rem;
-    font-weight: 400;
-}
-
 .boxVr1 div {
     display: flex;
     flex-direction: column;
@@ -75,7 +75,14 @@ main {
     height: 100%;
 }
 
+.boxVr1 div h1 {
+    text-align: center;
+    font-size: 4rem;
+    font-weight: 600;
+}
+
 .boxVr1 div h2 {
+    text-align: justify;
     font-size: 1.1rem;
 }
 
@@ -91,8 +98,14 @@ main {
     height: 100%;
 }
 
-.boxVr2 .umImg {
-    margin-left: 15%;
+.boxVr2 .imgVR {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.boxVr2 .imgVR img {
+    width: 40%;
 }
 
 .VRimagens {
@@ -121,34 +134,73 @@ main {
 }
 
 /*Footer*/
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100vw;
+    margin-top: 5%;
+    background-color: #D9D9D9;
+}
+
 .containerFooter {
     width: 100%;
+    display: flex;  
+}
+
+.boxImgFooter {
+    width: 50%;
+    height: 200px;
     display: flex;
-    margin-top: 5%;
-    background-color: #DFDFDF;
-    justify-content: center;
+    justify-content: end;
     align-items: center;
 }
 
-.containerFooter img {
-    width: 10%;
+.boxImgFooter img {
+    height: 70%;
+    margin-right: 5%;
+}
+
+.boxItemsFooter {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 200px;
+}
+
+.boxItemsFooter ul {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    justify-content: space-around;
+}
+
+.boxItemsFooter ul li {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+    list-style: none;
+    height: 35px;
+    padding-left: 5%;
 }
 
 .containerFooter a {
-    margin: 2%;
-    padding: 2%;
-    margin-bottom: 5%;
     font-size: 1rem;
-    display: flex;
     text-decoration: none;
     color: black;
 }
 
 .containerFooterUltimo {
     display: flex;
+    width: 100%;
+    height: 6vh;
     justify-content: center;
     align-items: center;
-    background-color: #DFDFDF;
 }
 
 /* CONFIG CARROSEL SWIPER */
@@ -163,12 +215,19 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rebeccapurple;
 }
 
 .swiper-slide img {
     width: 100%;
     height: 100%;
+}
+
+.slideM{
+    display: none;
+}
+
+.slidePC{
+    display: block;
 }
 
 /* MEDIA querie */
@@ -202,12 +261,38 @@ main {
 }
 
 @media screen and (max-width: 760px) {
+
+    /* Swiper SLIDE */
+
+    .slideM{
+        display: block;
+    }
+
+    .slidePC{
+        display: none;
+    }
+
     /* borda header */
     .bdr {
-        width: 35%;
+        width: 30%;
         height: 2px;
         background-color: rgb(141, 141, 141);
     }
+
+    /* HEADER */
+    
+    .navbar .nav-item .nav-link {
+        display: flex;
+        align-items: flex-end;
+        justify-content: start;
+        width: 100%;
+        height: 5vh;
+    }
+    
+    .navbar .nav-item .nav-link:focus {
+        scale: 1.015;
+    }
+    
 
     .boxVr {
         flex-direction: column;

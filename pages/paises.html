@@ -36,7 +36,7 @@
         <img id="france-thumb" crossorigin="anonymous" src="/Imagens/buttons/franca.png">
         <img id="china-thumb" crossorigin="anonymous" src="/Imagens/buttons/china.png">
         <img id="england-thumb" crossorigin="anonymous" src="/Imagens/buttons/england.png">
-        <audio id="click-sound" crossorigin="anonymous" src="https://cdn.aframe.io/360-image-gallery-boilerplate/audio/click.ogg"></audio>
+        <audio id="click-sound" crossorigin="anonymous" src="/Audio/click.ogg"></audio>
 
       </a-assets>
 
@@ -60,5 +60,15 @@
           raycaster="objects: .link"></a-cursor>
       </a-entity>
     </a-scene>
+    <script>
+      // Create a new Audio object
+      var audio = new Audio("/Audio/paises.mp3");
+  
+      // Set the loop attribute to true
+      audio.loop = true;
+  
+      // Play the audio
+      audio.play();
+  </script>
   </body>
 </html>

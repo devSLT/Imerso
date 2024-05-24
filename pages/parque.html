@@ -21,15 +21,54 @@
         event-set__mouseleave="scale: 1 1 1"
         sound="on: click; src: #click-sound"></a-entity>
     </script>
+    <script>
+      function simulateCenterClick() {
+        // Get the width and height of the viewport
+        const viewportWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+        const viewportHeight = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
+      
+        // Calculate the center coordinates
+        const centerX = viewportWidth / 2;
+        const centerY = viewportHeight / 2;
+      
+        // Create a new MouseEvent object
+        const clickEvent = new MouseEvent('click', {
+          view: window,
+          bubbles: true,
+          cancelable: true,
+          clientX: centerX,
+          clientY: centerY
+        });
+      
+        // Dispatch the click event to the document
+        document.dispatchEvent(clickEvent);
+      }
+      // Function to handle touch actions
+      function handleTouchAction(event) {
+        // Prevent default behavior to avoid scrolling or other unwanted effects
+
+        // Check if the touch action was a tap (single touch)
+        if (event.touches.length === 1) {
+          // Call the function to simulate a click at the center of the viewport
+          simulateCenterClick();
+        }
+      }
+
+      // Attach the event handler to the document
+      document.addEventListener('touchstart', handleTouchAction);
+      document.addEventListener('touchmove', handleTouchAction);
+      document.addEventListener('touchend', handleTouchAction);
+    </script>
   </head>
   <body>
     <a-scene>
       <a-assets>
         <video id="hulk"
-               loop
-               crossorigin="anonymous"
-               playsinline webkit-playsinline
-               src="/Videos/hulk.mp4">
+              autoplay
+              loop
+              crossorigin="anonymous"
+              playsinline webkit-playsinline
+              src="/Videos/hulk.mp4">
         </video>
         <img id="rip-thumb" crossorigin="anonymous" src="/Imagens/buttons/jurassic.png">
         <audio id="click-sound" crossorigin="anonymous" src="/Audio/click.ogg"></audio>
@@ -53,7 +92,7 @@
                 width:6;
                 wrapCount:100;
                 color: white;
-                value: Clique para iniciar o video"
+                value: "
           hide-on-play="#hulk">
         </a-entity>
       </a-camera>
